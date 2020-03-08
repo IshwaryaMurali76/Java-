@@ -1,0 +1,16 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class TestRegx {
+	public static void main(String args[])
+	{
+		Pattern myPattern=Pattern.compile("[abc]at");
+		Matcher myMatcher=myPattern.compile("bat");
+		boolean myBoolean=myMatcher.matches();
+		if(myBoolean)
+			System.out.println("Expression matched");
+		else
+			System.out.println("Expression not matched");
+	}
+
+}
