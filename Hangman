@@ -1,0 +1,31 @@
+import java.util.*;
+class Hangman {
+void play() {
+System.out.println("Play Method invoked");
+}
+void view(){
+System.out.println("View method invoked");
+}
+void exit() {
+System.out.println("Exit method invoked");
+}
+public static void main(String[] args) {
+int a;
+Hangman h=new Hangman();
+System.out.println("Play");
+System.out.println("View");
+System.out.println("Exit");
+System.out.println("Enter your choice");
+Scanner s= new Scanner(System.in);
+a=s.nextInt();
+switch(a) {
+case 1: h.play();
+break;
+case 2:h.view();
+break;
+case 3:h.exit();
+break;
+default:System.out.println("Enter the correct choice");
+}
+}
+}
