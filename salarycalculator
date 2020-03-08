@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class salarycalculator
+{
+public static void main(String[] args)
+{
+int hra;
+int specialallowance;
+int pf;
+int netpayablesalary;
+int basicsalary;
+System.out.println("enter your basic salary:");
+Scanner scl=new Scanner(System.in);
+basicsalary=scl.nextInt();
+hra=(50*basicsalary)/100;
+specialallowance=(75*basicsalary)/100;
+pf=(12*basicsalary)/100;
+netpayablesalary=basicsalary+hra+specialallowance-pf;
+System.out.println("basic salary="+basicsalary);
+System.out.println("hra="+hra);
+System.out.println("specialallowance="+specialallowance);
+System.out.println("pf="+pf);
+System.out.println("----------------------------------------------------------");
+System.out.println("netpayablesalary="+netpayablesalary);
+}
+}
