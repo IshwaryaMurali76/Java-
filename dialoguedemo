@@ -1,0 +1,16 @@
+import javax.swing.JDialog;
+public class dialogdemo
+{
+JDialog obj;
+public dialogdemo()
+{
+obj=new JDialog();
+obj.setTitle("JDialog Demo");
+obj.setVisible(true);
+obj.setSize(300,150);
+}
+public static void main(String[]args)
+{
+dialogdemo dobj=new dialogdemo();
+}
+}
